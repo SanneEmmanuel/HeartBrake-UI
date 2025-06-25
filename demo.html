@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HeartBrake UI Demo</title>
+  <link rel="stylesheet" href="heartbrake.min.css">
+  <style>
+    body { padding: 2rem; }
+    section { margin-bottom: 3rem; }
+    .demo-box {
+      padding: 1rem;
+      margin: 1rem 0;
+      background: var(--color-surface);
+      box-shadow: var(--elevation-1);
+      border-radius: var(--radius-md);
+    }
+  </style>
+</head>
+<body>
+  <h1>❤️ HeartBrake UI Demo</h1>
+
+  <section>
+    <h2>Buttons</h2>
+    <button class="btn">Primary Button</button>
+    <button class="btn btn--secondary">Secondary Button</button>
+  </section>
+
+  <section>
+    <h2>Inputs</h2>
+    <input class="input" type="text" placeholder="Enter text..." />
+  </section>
+
+  <section>
+    <h2>Cards</h2>
+    <div class="card">This is a card. Use for content blocks.</div>
+  </section>
+
+  <section>
+    <h2>Modal</h2>
+    <div class="modal">This is a modal style block (not interactive yet).</div>
+  </section>
+
+  <section>
+    <h2>Grid Layout</h2>
+    <div class="row">
+      <div class="col-6 card">Column 1</div>
+      <div class="col-6 card">Column 2</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Animations</h2>
+    <div class="demo-box animate-fadeIn">Fade In</div>
+    <div class="demo-box animate-slideUp">Slide Up</div>
+    <div class="demo-box animate-zoomIn">Zoom In</div>
+    <div class="demo-box animate-bounce">Bounce</div>
+    <div class="demo-box animate-glassMorph">Glass Morph</div>
+    <div class="demo-box animate-rotate3D">Rotate 3D</div>
+    <div class="demo-box animate-ghostTrail">Ghost Trail</div>
+    <div class="demo-box animate-quantum">Quantum Blip</div>
+    <div class="demo-box animate-stutter">Stutter Frame</div>
+    <div class="demo-box animate-portal">Portal Open</div>
+  </section>
+
+  <section>
+    <h2>Theme Toggle</h2>
+    <button class="btn" onclick="toggleTheme()">Toggle Light/Dark Theme</button>
+  </section>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.setAttribute('data-theme', html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    }
+  </script>
+</body>
+</html>
