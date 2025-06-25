@@ -1,0 +1,57 @@
+/* === BUTTONS === */
+.btn {
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color var(--motion-fast);
+}
+
+.btn:hover {
+  background-color: #3700b3;
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: #000;
+}
+
+/* === CARDS === */
+.card {
+  background: var(--color-surface);
+  box-shadow: var(--elevation-1);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  transition: box-shadow var(--motion-medium);
+}
+
+.card:hover {
+  box-shadow: var(--elevation-3);
+}
+
+/* === MODALS === */
+.modal {
+  background: var(--color-surface);
+  box-shadow: var(--elevation-2);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  max-width: 500px;
+  margin: auto;
+}
+
+/* === INPUTS === */
+.input {
+  padding: var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  width: 100%;
+  font-size: 1rem;
+  transition: border-color var(--motion-fast);
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
