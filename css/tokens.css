@@ -1,0 +1,33 @@
+:root {
+  /* === COLORS === */
+  --color-primary: #6200ee;
+  --color-secondary: #03dac6;
+  --color-surface: #ffffff;
+  --color-background: #f5f5f5;
+  --color-text: #000000;
+  --color-muted: #8e8e93;
+  --color-border: rgba(0,0,0,0.12);
+  --color-accent: #007aff;
+
+  /* === SPACING === */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* === RADIUS === */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* === ELEVATION === */
+  --elevation-1: 0 1px 3px rgba(0,0,0,0.12);
+  --elevation-2: 0 3px 6px rgba(0,0,0,0.16);
+  --elevation-3: 0 10px 20px rgba(0,0,0,0.19);
+
+  /* === MOTION === */
+  --motion-fast: 150ms ease-in;
+  --motion-medium: 300ms ease;
+  --motion-slow: 500ms ease-out;
+}
